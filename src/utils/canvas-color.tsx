@@ -1,6 +1,6 @@
 import { CanvasColorType } from "../../types";
 
-const DEFAULT_COLORS = { solid: 'rgb(54, 54, 54)', faded: 'rgb(210, 209, 208)' };
+const DEFAULT_COLORS = { solid: 'rgb(0, 26, 255)', faded: 'rgb(247, 0, 247)' };
 
 const convertHexToRgb = (color: string, height?: number | undefined, graphShaded ?: boolean) => {
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(color);
