@@ -87,7 +87,7 @@ function Record() {
       /* this part handles the storing of audio data */
       const mediaRecorder = new MediaRecorder(micStream);
       obj.current.mediaRecorder = mediaRecorder;
-      mediaRecorder.start();
+      mediaRecorder.start(1000);
       mediaRecorder.addEventListener('dataavailable', async (event) => {
         const arrayBuffer = await event.data.arrayBuffer();
         const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
